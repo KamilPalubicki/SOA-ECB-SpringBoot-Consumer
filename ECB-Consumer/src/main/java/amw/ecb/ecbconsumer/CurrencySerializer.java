@@ -1,7 +1,8 @@
-package com.example.xmlexample;
+package amw.ecb.ecbconsumer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.common.serialization.Serializer;
+
 import java.util.Map;
 
 public class CurrencySerializer implements Serializer<Currency> {

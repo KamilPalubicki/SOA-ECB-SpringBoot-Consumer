@@ -1,4 +1,4 @@
-package com.example.xmlexample;
+package amw.ecb.ecbconsumer;
 
 public class Currency {
     private String date;

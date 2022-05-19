@@ -31,12 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### Kafka ###
-kafka/kafka-logs/
-kafka/logs/
-kafka/zookeeper-data/
-kafka/bin/
-kafka/licenses/
-kafka/libs/
-kafka/site-docs/
