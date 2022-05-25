@@ -27,4 +27,22 @@ public class SQLiteOperations {
             e.printStackTrace();
         }
     }
+
+    public void deleteData (){
+        Statement status = null;
+        Connection connect = null;
+
+        try{
+            connect = DriverManager.getConnection("jdbc:sqlite:EbcDB.db");
+            status = connect.createStatement();
+
+            String deleteSQL = "DELETE FROM CURRENCIES;";
+
+            status.executeUpdate(deleteSQL);
+            status.close();
+            connect.close();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

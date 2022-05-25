@@ -6,6 +6,8 @@ import org.springframework.kafka.config.KafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+
 @Component
 public class KafkaListeners extends SQLiteOperations {
 
@@ -13,5 +15,10 @@ public class KafkaListeners extends SQLiteOperations {
     public void listenGroupECB(Currency currency) {
         System.out.println("Received message: " + currency.getRate());
         addData(currency);
+    }
+
+    @PostConstruct
+    public void onStartup() {
+        deleteData();
     }
 }
