@@ -2,7 +2,7 @@
 #### Aplikacja SpringBoot mająca na celu nasłuchiwanie kafki i przy pojawieniu się nowych rekordów wpisanie ich do bazy danych SQLite
 
 ### Na chwilę obecną:  
-Aplikacja Spring Boot nasłuchuje Kafkę i przy pojawianiu się nowych rekordów dodaje je do bazy danych
+Aplikacja Spring Boot nasłuchuje Kafkę i przy pojawianiu się nowych rekordów dodaje je do bazy danych, przy uruchomieniu baza się zeruje, aby pojawiły się w niej dane należy uruchomić następnie pierwszy mikroserwis.
 
 ### Jak włączyć:  
 Uruchomić Kafka Zookeeper  
